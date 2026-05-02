@@ -1,0 +1,5100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    user-select:none;
+    scrollbar-width: none;
+}
+
+
+      img{width:100%;height:100%;margin:0rem;display: block;}
+      a{text-decoration:none}
+      
+     
+body{
+    background:#040B18;
+    overflow-x:hidden;
+    margin:0rem;
+}
+
+a{text-decoration:none;}
+
+/* ---------- NAV ---------- */
+section.header-landing{
+    position:fixed;
+    top:0;
+    z-index:100;
+    width:100%;
+    height:3rem;
+    display:grid;
+    background:whitesmoke;
+    grid-template-columns:1fr 2fr 1fr;
+    padding:0 1rem;
+}
+
+#nemx-logo img{
+    width:6rem;
+    height:3rem;
+}
+
+#navigation-links{
+    background:none;
+    display:flex;
+    gap:4rem;
+    justify-content:center;
+    align-items:center;
+}
+
+#navigation-links a{
+    color:black;
+    font-weight:bold;
+    font-size:18px;
+    white-space: nowrap;
+    font-family:Arial, sans-serif;
+    transition: 0.3s;
+}
+
+#navigation-links a:hover{
+    color:#ff5a1f;
+    /*-webkit-text-stroke:0.3px #ff5a1f;*/
+}
+
+/* ---------- HEADER IMAGE ---------- */
+header{
+    position:relative;
+}
+
+.portfolio_start{
+    width:100%;
+    display:block;
+}
+
+
+
+
+/* SKILLS WRAPPER */
+
+
+  div.skills-wrapper { 
+      width: 100%;
+      overflow: hidden; 
+      white-space: nowrap;
+      padding: 10px 0;
+      background: rgba(40, 40, 40);  
+      font-family: Georgia, serif;
+      position:absolute;
+      bottom:-30%;
+    
+ }
+
+div.skills-track {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollSkills 15s linear infinite; 
+    }
+
+div.skills-track span { 
+    display: inline-block; 
+    color: white;
+    font-size: 14px; 
+    margin: 0 18px;
+    }
+
+.diamonds { 
+    color: white;
+    font-size: 12px;
+    }
+
+@keyframes scrollSkills {
+    from 
+    { transform: translateX(0); }
+    to 
+    { transform: translateX(-100%);
+    } 
+}
+
+@media (max-width: 480px) {
+.skills-track span { 
+font-size: 12px;
+margin: 0 12px;
+     } 
+}
+
+  
+      section.second-section{
+          width:100%;
+          height:50rem;
+          display:flex;
+          margin-top:9rem;
+      }
+      
+      div#second-section-title{
+        width:60%;
+        height:10rem;
+        padding-left:0.5rem;
+      }
+      section.left-side-section{
+          width:60%;
+          height:100%;
+          background:none;
+      }
+      
+      section.right-side-section{
+          width:40%;
+          height:100%;
+          background:none;
+      }
+      
+      p#second-section-intro-paragraph{
+          color:white;
+          font-size:1.4rem;
+      }
+      
+      div#second-section-intro-paragraph{
+        padding:1rem;
+        margin-bottom:2rem;
+        
+      }
+
+      section.who-am-i-parts{
+          width:100%;
+          height:18.5rem;
+          display:flex;
+          margin-top:1rem;
+      }
+      
+      section.who-am-i-section{
+          width:33.33%;
+          height:100%;
+          background:none;
+          padding:1rem;
+      }
+      
+       
+       .features{
+          display:flex;
+          flex-direction:column;
+          gap:18px;
+          padding:1rem;
+    }
+       .row{
+           display:flex;
+           gap:18px;
+           font-family:Arial, Helvetica, sans-serif
+           }
+
+
+      .pill{
+    padding:10px 20px;
+    border-radius:30px;
+    border:2px solid #aaa;
+    color:white;
+    font-size:14px;
+    letter-spacing:1px;
+    white-space:nowrap;
+}
+
+
+.filled{
+    background:white;
+    color:black;
+    border:none;
+}
+
+
+div#subtitle{
+    width:60%;
+    height:3.5rem;
+    background:none;
+}
+
+div#who-am-i-paragraph{
+     width:100%;
+     height:14rem;
+     padding-top:1rem;
+     background:none;
+     color:white;
+     word-spacing:2px;
+}
+
+
+
+section.contact-section{
+  width:100%;
+  height:45rem;
+  position: relative;
+  background: none;
+}
+
+img.background-image-section-3{
+    position: absolute;
+    top:0%;
+    z-index:-1;
+}
+
+section.contact-section-2{
+   width:100%;
+   height:100%;
+   background-color:none;
+   padding:0 1rem 0 1rem;
+
+
+}
+
+section#section3-title{
+   width:60%;
+   height:9rem;
+   background:none;
+   padding-top:1rem;
+}
+
+div#little-logon{
+   
+   color:white;
+   font-weight: bold;
+   font-size:1.2rem;
+   margin-bottom:3rem;
+}
+
+section.personal-details-section{
+   width:100%;
+   display:flex;
+   justify-content: center;
+   padding-top:3rem;
+}
+/* White card */
+div.contact-card{
+  width:77%;
+  height:450px;
+  background:white;
+  border-radius:25px;
+  position:relative; /* IMPORTANT */
+  display:flex;
+  padding:1.5rem;
+}
+
+section.my-image{
+  width:33%;
+  height:100%;
+  background:none;
+  margin-left:1rem;
+}
+/* Social container */
+div.socials{
+  position:absolute;
+  left:-35px;
+  top:50%;
+  transform:translateY(-50%);
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+/* Buttons */
+div#social{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  background:orangered;
+  border:0.1rem solid white;
+}                
+
+img#social{
+    border-radius:50%;
+}
+
+img#my-image{
+  border-radius:1rem;
+}
+
+section#personal-details-side{
+  width:67%;
+  height:100%;
+  background:none;
+  padding-left:2rem;
+}
+
+div#personal-details-container{
+  width:100%;
+  height:80%;
+  background:none;
+}
+
+p#userdetails-title{
+  font-size:0.9rem;
+  color:grey;
+  font-weight: bold;
+  margin-bottom:0;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+p#user-info{
+  font-size:1.6rem;
+  margin-bottom:1rem;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+div#cv-downloader{
+  width:100%;
+  height:20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+div#download-cv-title{
+  width:10rem;
+  height:70%;
+  background:orangered;
+  border-radius: 1rem;
+  font-weight:bold;
+  font-family:Arial, Helvetica, sans-serif;
+ text-align: center;
+ padding-top:0.5rem;
+ 
+}
+
+
+button#download-cv{
+  width:4rem;
+  height:70%;
+  background:orangered;
+  border:none;
+  border-radius:1rem;
+  margin-left:1rem;
+  padding:0.8rem 0.9rem 0.8rem 0.9rem;
+}
+
+
+div#logo-side-container{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    background:none;
+    width:4rem;
+    height:4rem;
+}
+
+
+      section.cybersection-section{
+        width:100%;
+        height:52rem;
+        background:none;
+        position: relative;
+        padding:1rem;
+        margin-top:4rem;
+      }
+
+      img.cyber-background{
+        position:absolute;
+        top:0;
+        z-index:-1;
+      }
+      section.cyber-upper-section{
+        width:100%;
+        height:20%;
+        background-color:none;
+        display: flex;
+      }
+
+      section.cyber-lower-section{
+        width:50%;
+        height:80%;
+        background:none;
+        position: relative;
+      }
+
+      div#cyber-title{
+        width:60%;
+        height:100%;
+        background:none;
+        padding:none;
+      }
+
+        div#cyber-navigation{
+        width:40%;
+        height:30%;
+        background:none;
+        position:relative;
+      }
+
+      div#cyber-intro-paragraph{
+        width:100%;
+        background:none;
+        margin:1rem 0 5rem 0;
+        color:white;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing:2px;
+      }
+
+      div#cyber-intro-pic{
+        position: absolute;
+        right:0%;
+        background:none;
+        top:13rem;
+        z-index:10;
+        width:20rem;
+        height :8rem;
+        border-radius:1rem;
+        border:0.1rem solid white;
+      }
+
+      section.cyber-table-container{
+        width:100%;
+        position: absolute;
+        bottom:0%;
+        background:none;
+      }
+
+      div#cyber-table-title{
+        font-weight: bold;
+        font-size:2rem;
+        color:white;
+        margin-bottom:1rem;
+      }
+
+      div#cyber-table-info{
+        width:70%;
+        height:20rem;
+        padding:1rem;
+        background:white;
+        border-radius:1rem;
+        display:flex;
+        flex-flow:column;
+        justify-content: center;
+      }
+
+      a.cyber-table-shortcuts{text-decoration: none;color:black}
+      
+      section.cyber-image-section{
+        width:35rem;
+        height:35rem;
+        background:none;        
+        position: absolute;
+        bottom:0%;
+        right:0%;
+        opacity:0.8;
+  
+      }
+
+      
+
+.table-section{
+    display:flex;
+    align-items:center;
+    margin-bottom:1.8rem;
+}
+
+      
+.table-circle{
+    width:2rem;
+    height:2rem;
+    background:black;
+    border-radius:50%;
+    color:white;
+    font-size:1rem;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:40px;
+}
+
+.table-title{
+    font-size:1.2em;
+    font-weight:700;
+    color:black;
+    text-decoration: 0.1rem underline black;
+}
+
+       img.intro-pic{
+        border-radius:1rem;
+       }
+
+       
+
+      section.tools-section{
+           width:100%;
+           height:40rem;
+           background:none;
+           padding:1rem;
+           
+      }
+
+      div#subtitle-img{
+        width:50%;
+        height:6rem;
+      }
+
+      div#section-title-bio{
+         width:100%;
+          color:white;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing:2px;
+        margin-top:1rem;
+      }
+  
+      section.os-list{
+        width:100%;
+        height:23rem;
+        background:none;
+        margin-top:5rem;
+        display: flex;
+        overflow-x: auto;
+      }
+
+      div.object-container{
+        min-width:18rem;
+        height:100%;
+        border-radius:1rem;
+        background:white;
+        padding:1rem;
+        margin-right:6rem;
+      }
+
+      section#header-container{
+        width:100%;
+        height:15%;
+        background:none;
+        display:flex;
+      }
+
+      div#number-of-object{
+        width:20%;
+        height:100%;
+        border-radius:50%;
+        background:black;
+        margin-right:1rem;
+        color:white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div#name-of-object{
+        width:80%;
+        height:100%;
+        font-size:1.3rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      section.object-used-for{
+        width:100%;
+        height:25%;
+        background:none;
+        padding-top:1rem;
+      }
+
+      section.object-image{
+        width:100%;
+        height:60%;
+        border-radius:1rem;
+      }
+
+      img.object-image{border-radius:1rem}
+
+      section.security-env-title{
+        width:100%;
+        height:15rem;
+        background:none;
+        display: flex;
+        padding:0 1rem 0 1rem;
+        margin:7rem 0 2rem 0;
+      }
+
+      div.security-env-title{
+        width:50%;
+        height:100%;
+        background:none;
+        padding-bottom:6rem;
+      }
+
+      div.security-env-paragraph{
+        width:50%;
+        height:100%;
+        background:none;
+        font-weight:bold;
+        font-size:1.1rem;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing:2px;
+        display:flex;
+        align-items:none;
+        padding:1rem 0 0 2rem
+      }
+
+      
+/* Scroll container */
+.scroll-container {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    overflow-x: auto;
+}
+
+/* Hide scrollbar */
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card */
+.card {
+    min-width: 350px;
+    background: #f1f1f1;
+    border-radius: 30px; /* 🔥 smooth curves */
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right:3rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Image section */
+.card-image {
+    width:100%;
+    position: relative;
+    height: 180px;
+}
+/* 01 badge */
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+/* Content */
+.card-content {
+    padding: 18px;
+}
+
+.small-title {
+    color: #555;
+    font-size: 14px;
+}
+
+.main-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.desc {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Footer */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Grey placeholders */
+.box {
+    width: 80px;
+    height: 30px;
+    background: lightgrey;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+/* Button */
+.btn {
+    background: #ff4d00;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+img.card-image{
+    position:absolute;
+    top:0%;
+    z-index:0;
+}
+
+section.cybersection-projects-section{
+    width:100%;
+  background-color:none;
+    padding:1rem;
+    margin-top:2rem;
+}
+
+div#cybersection-projects-title{
+    width: 50%;
+    height:9rem;
+    background:none;
+}
+
+div#cybersection-projects-introducting{
+        font-size:1.1rem;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing:2px;
+        width:70%;
+        color:white;
+        margin:2rem 0 4rem 0;
+}
+
+  section.websecurity-section{
+        width:100%;
+        height:47rem;
+        border-radius: 2rem;
+        background:white;
+        padding:2rem;
+      }
+
+      section.webpara-header{
+        width:100%;
+        height:4rem;
+        background:orangered;
+        padding:0.3rem;
+        border-radius:2rem;
+        display: flex;
+      }
+      
+      section#webpara-number{
+        width:33.33%;
+        height:100%;
+        background:none;
+        display: flex;
+      }
+
+     div.webpara-number-container{
+        width:15%;
+        height:100%;
+        background:none;
+     }
+  
+     div.webpara-title{
+        width:85%;
+        height:100%;
+        background:none;
+        display: flex;
+        padding-left:1rem;
+        align-items: center;
+        font-size:1.2rem;
+        font-weight: bold;
+        color:white;
+     }
+
+     div#webpara-number-container{
+        width:100%;
+        height:100%;
+        border-radius: 50%;
+        background:black;
+        color:white;
+        font-size:1.2rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     section.webpara-containers-info{
+        width:100%;
+        height:15rem;
+        background:none;
+        display: flex;
+     }
+
+
+     div.webpara-info{
+        width:33.3%;
+        height:100%;
+        background:none;
+        padding-top:1rem;
+        word-spacing: 2px;
+        font-weight: bold;
+        margin-top:1rem;
+     }
+
+     div.webpara-info:nth-child(1), div.webpara-info:nth-child(2){
+          border-right:0.2rem solid black;
+     }
+
+     div.webpara-info:nth-child(2), div.webpara-info:nth-child(3){
+          padding-left:1rem;
+     }
+     
+     section.websecurity-section-title{
+        width:50%;
+        height:9rem;
+        margin-top:5rem;
+     }
+
+     div.websecurity-section-intro{
+        margin:2rem 0 4rem 0;
+        font-size:1.1rem;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing:2px;
+        width:70%;
+        color:white;
+     }
+
+     section.websecurity-section-holder{
+        padding:1rem;
+     }
+
+
+      section.write-ups-section{
+        width:100%;
+        height: 23rem;
+        background: none;
+        display: flex;
+        overflow-x: scroll;
+        margin:5rem 0 12rem 0;
+        padding:1rem;
+      }
+
+      section.writeup-intro{
+        min-width:20rem;
+        height:100%;
+        background:none;
+      }
+
+      div#writeup-intro{
+        width:100%;
+        height:55%;
+        background:orangered;
+        padding:0.5rem;
+        border-radius:1rem;
+        margin-bottom: 1rem;
+      }
+
+      section.writeup-picture{
+        width:100%;
+        height:40%;
+        background:none;
+      }
+
+      img.writeup-picture{
+        border-radius: 1rem;
+      }
+
+      div#writeup-header{
+        width:100%;
+        height:25%;
+        background:none;
+        display:flex;
+        color:white;
+      }
+
+      div#writeup-body{
+        width:100%;
+        height:75%;
+        background:none;
+        padding-top:1rem;
+        font-weight:bold;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+
+      div#writeup-section-icon-container{
+        width:14%;
+        height: 90%;
+        background:none;
+      }
+
+      div.writeup-section-icon{
+        width:100%;
+        height:100%;
+        border-radius: 50%;
+        background:white;
+        padding:0.4rem;
+        border:0.1rem solid black;
+      }
+
+      
+
+
+      div#write-ups-section-title-intro{
+        width:83%;
+        height: 100%;
+        background:none;
+        display:flex;
+        align-items:center;
+        padding-left: 1rem;
+        font-size:1.1rem;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+    
+      }
+
+      section.report-container{
+        min-width:20rem;
+        height: 100%;
+        background: white;
+        border-radius: 1rem;
+        margin-left:3rem;
+        padding:0.5rem;
+      }
+
+      div#report-container-number{
+        width:50%;
+        height:13%;
+        background-color:none;
+      }
+
+      div#report-number{
+        width:30%;
+        height:100%;
+        background:black;
+        color:white;
+        border-radius:50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size:1.1rem;
+      }
+
+
+      section.report-title{
+        width:100%;
+        height:27%;
+        background:none;
+        padding-top:1rem;
+        font-size:1.4rem;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        display:flex;
+        align-items: flex-end;
+        border-bottom: 0.1rem solid grey;
+      }
+
+      section.report-summary{
+        width:100%;
+        height:45%;
+        background:none;
+        padding-top:1rem;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing:2px;
+      }
+
+      div#report-view{
+        width:100%;
+        height:15%;
+        background:none;
+        display: flex;
+        
+        justify-content: flex-end;
+      }
+
+      div#report-view-button{
+        width:8rem;
+        height:100%;
+        border-radius:2rem;
+        background:orangered;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        font-size:1.1rem;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold;
+      }
+
+      section#write-ups-container-title{
+        width:100%;
+        height:6rem;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin-top:9rem;
+      }
+
+      section.write-ups-container-title{
+        width:50%;
+        height:100%;
+      }
+
+
+      footer.footer-section{
+         width:100%;
+         height:75rem;
+         position: relative;
+      }
+
+
+      section.footer-info{
+        position: absolute;
+        top:0%;
+        left:0%;
+        width:100%;
+        height:100%;
+      }
+
+
+      header.footer-header{
+        width:69%;
+        height:6%;
+        background:none;
+        display:flex;
+        align-items: center;
+        padding-left:2rem;
+        font-weight: bold;
+        font-size:1.3em;
+      }
+
+      section#saving-space{
+        width:100%;
+        height:42.3%;
+      }
+
+      section.footer-bottom{
+        width:100%;
+        height:51.7%;
+        background:none;
+        display:flex;
+      }
+
+      section.footer-bottom-left{
+        width:69%;
+        height: 100%;
+        background:none;
+      }
+
+      section.footer-bottom-right{
+        width:31%;
+        height: 100%;
+        background:none;
+      }
+
+      section#links-and-media{
+        width:100%;
+        height:27.7%;
+        display:flex;
+        justify-content: space-between;
+        background:none;
+      }
+
+      section#quick-links{
+        width:40%;
+        height:100%;
+        padding:1rem;
+        display:flex;
+      }
+
+      div#quick-links,div#others{
+        width:50%;
+        height:100%;
+      }
+
+      p#links-title{
+        font-weight: bold;
+        font-size:1.1rem;
+        margin-bottom:1rem;
+      }
+
+      p.links{
+        padding-bottom: 0.5rem;
+        text-decoration: none;
+        color:rgb(0, 0, 0)
+      }
+
+      section.social-media-links{
+        width:21.5%;
+        height:100%;
+        background: none;
+
+      }
+
+      div.upper-socials,div.lower-socials{
+        width:100%;
+        height: 50%;
+        display:flex;
+      }
+
+      div#social-box{
+        width:50%;
+        height:100%;
+        background:none;
+      }
+
+      section.nemx-logo{
+        width:100%;
+        height:62.5%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+
+      div#nemx-detials{
+        width:70%;
+        height:45%;
+        background:none;
+        padding:0 1rem 0 1rem;
+        display:flex;
+        flex-flow:column;
+       font-size: 1.5rem;
+      }
+
+      section.footer-copyright{
+        width:100%;
+        height:9.8%;
+        background:none;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        word-spacing: 3px;
+        font-weight:bold;
+      }
+
+      div#back-to-top-content{
+        width:100%;
+        height: 15%;
+        background:none;
+        display:flex;
+        justify-content: flex-end;
+      }
+
+      div#back-to-top{
+        width:40%;
+        height:100%;
+        background:none;
+        display:flex;
+        justify-content: flex-end;
+        padding-right:1rem;
+        align-items: center;
+      }
+
+      section.header-of-headers{
+        width:100%;
+        height:5rem;
+        background:none;
+        display:flex;
+      }
+
+      div.headers-name-side{
+        width:69%;
+        height: 100%;
+        display:flex;
+        background:none;
+      }
+
+      div.contact-us-side{
+        width:31%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        background: #E5E5E5;
+      }
+
+      div#header-name{
+        width:40%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        background:#010B18;
+        word-spacing: 4px;
+        font-weight: bold;
+        color:white;
+      }
+
+      div#header-pic{
+        width:60%;
+        padding:0 5rem 0 5rem;
+        height:100%;
+        background:#010B18;
+         display: flex;
+          align-items: center;
+      }
+
+
+p#hook{
+    font-weight: bold;color:#ff7a00;
+}
+
+section.pc-site{
+    display: block;
+}
+
+
+section.mobile-site{
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+
+section.pc-site{
+    display: none;
+}
+
+
+section.mobile-site{
+    display: block;
+}
+
+    
+      *{
+          margin:0rem;
+          padding:0rem;
+          user-select:none;
+          box-sizing:border-box;
+      }
+      
+      img{width:100%;height:100%;margin:0rem;display: block;}
+      a{text-decoration:none}
+      
+      body{background:#040B18;margin:0rem;}
+        
+      header.hero-section{
+          width:100%;
+          
+          position:relative;
+      }
+      
+      img.hero-image{
+          
+          top:0;
+          
+      }
+      
+      
+      /* ---------- NAV ---------- */
+section.header-landing{
+    position:fixed;
+    top:0;
+    z-index:100;
+    width:100%;
+    height:3rem;
+    display:grid;
+    background:whitesmoke;
+    grid-template-columns:1fr 2fr 1fr;
+    padding:0 1rem;
+}
+
+#nemx-logo img{
+    width:3rem;
+    height:3rem;
+    margin-right:1rem;
+    padding:0.4rem;
+}
+
+#navigation-links{
+    background:none;
+    display:flex;
+    gap:2rem;
+    justify-content:center;
+    align-items:center;
+}
+
+#navigation-links a{
+    color:black;
+    font-weight:bold;
+    font-size:1rem;
+    white-space: nowrap;
+    font-family:Arial, sans-serif;
+    transition: 0.3s;
+}
+
+#navigation-links a:hover{
+    color:#ff5a1f;
+    /*-webkit-text-stroke:0.3px #ff5a1f;*/
+}
+
+
+  div.skills-wrapper { 
+      width: 100%;
+      overflow: hidden; 
+      white-space: nowrap;
+      padding: 10px 0;
+      background: rgba(40, 40, 40, 0.85);  
+      font-family: Georgia, serif;
+      position:absolute;
+      bottom:5%;
+ }
+
+div.skills-track {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollSkills 15s linear infinite; 
+    }
+
+div.skills-track span { 
+    display: inline-block; 
+    color: white;
+    font-size: 14px; 
+    margin: 0 18px;
+    }
+
+.diamonds { 
+    color: white;
+    font-size: 12px;
+    }
+
+@keyframes scrollSkills {
+    from 
+    { transform: translateX(0); }
+    to 
+    { transform: translateX(-100%);
+    } 
+}
+
+@media (max-width: 480px) {
+.skills-track span { 
+font-size: 12px;
+margin: 0 12px;
+     } 
+}
+
+    section.second-section-introduction{
+        width:100%;
+        background:none;
+        padding:none;
+    }
+    
+    div#second-section-title{
+        width:90%;
+        
+    }
+
+    div#second-section-information{
+        width:90%;
+        color:white;
+        margin:1rem 0 0 1rem;
+    }
+    
+    /*  PILLS OF ABILITIES */
+           .features{
+          display:flex;
+          flex-direction:column;
+          gap:7px;
+          margin-top:2rem;
+    }
+       .row{
+           display:flex;
+           gap:7px;
+           font-family:Arial, Helvetica, sans-serif
+           }
+
+
+      .pill{
+    padding:6px 6px;
+    border-radius:30px;
+    border:2px solid #aaa;
+    color:white;
+    font-size:14px;
+    letter-spacing:1px;
+    white-space:nowrap;
+}
+
+
+.filled{
+    background:white;
+    color:black;
+    border:none;
+    display:flex;
+    align-items:center;
+}
+
+/* WHAT WHO AND HOW ABOUT ME */
+
+
+         section.what-who-how-section{
+             width:100%;
+             height:18rem;
+             background:none;
+             display:flex;
+             align-items:center;
+             margin-top:4rem;
+             padding-left: 1rem;
+             overflow:auto;
+         }
+         
+         section.question-container{
+             min-width:20rem;
+             height:100%;
+             background:none;
+             display:flex;
+             flex-flow:column;
+             justify-content:space-between;
+         }
+         
+         div#question-box{
+             width:35%;
+             height:17%
+            
+            
+            
+         }
+         
+         div#answer-box{
+             width:70%;
+             height:75%;
+             padding-top:0.5rem;
+             border: 1px solid rgba(255,140,0,0.7);
+             box-shadow: 0 0 15px rgba(255,140,0,0.08);
+             border-radius:1rem;
+             padding:0.7rem;
+             display:grid;
+             color:white;
+             place-items:center;
+             position:relative;
+         }
+         
+
+/* CARD LIST */
+.card-list {
+  display: flex;
+  gap: 20px;
+  padding: 0.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+/* CARD */
+.card {
+  position: relative;
+  min-width: 300px;
+  height: 380px;
+  border-radius: 25px;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+/* IMAGE */
+.card img.main-img {
+  object-fit: cover;
+}
+
+/* LOGO */
+.logo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+}
+
+/* BLUR CONTENT */
+.card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  backdrop-filter: blur(12px);
+  background: rgba(0,0,0,0.3);
+  
+}
+
+/* TEXT */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.location {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 5px 0 12px;
+}
+
+.location img {
+  width: 12px;
+  height: 12px;
+}
+
+/* BOTTOM ROW */
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  background: rgba(255,255,255,0.2);
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.btn {
+  background: white;
+  color: black;
+  padding: 10px 28px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+/* DOTS */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #bbb;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: orangered;
+  transform: scale(1.3);
+}
+
+#title-title{font-size:0.7rem;margin-bottom:0.5rem;opacity:0.85}
+
+
+/*MAIN CARD INFO*/
+.card-contact-info{
+  position:relative;
+  min-width:300px;
+  height:380px;
+  border-radius:25px;
+  overflow:hidden;	
+  scroll-snap-align: center;
+}
+
+/* REAL IMAGE */
+.card-contact-info img{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* GLASS / BLUR BOX */
+.blur-box-info{
+  position:absolute;
+  inset:15px; /* 👈 spacing instead of padding */
+  border-radius:20px;
+  backdrop-filter:blur(18px);
+  background:rgba(255,255,255,0.12);
+  color:white;
+  padding:20px;
+
+  box-shadow: inset 0 0 25px rgba(255,255,255,0.15);
+  
+}
+
+
+     div#location-me{
+         width:100%;
+         height:3rem;
+         background:#4A4A4A;
+         display:flex;
+         padding:0.5rem;
+         border-radius:1rem;
+         align-items:center;
+     }
+     
+     div#location-icon{ 
+         width:3rem;
+         height:3rem;
+         display:flex;
+         align-items:center;
+         justify-content:center;
+     }
+     
+     img.location-icon{
+         width:2rem;height:2rem
+     }
+     
+     p#location-title{
+         margin-left:0.5rem;
+         font-size:1.2rem;
+         font-weight:bold;
+     }
+     
+     ul{padding:15px}
+     li{margin-bottom:5px;color:black;font-size:1.1rem;}
+     
+     section.social-medias{
+         width:100%;
+         height:15rem;
+         background:none;
+     }
+     
+     section.upper-medias{
+         width:100%;
+         height:50%;
+         display:flex;
+     }
+     
+     div#social-box{
+         width:50%;
+         height:100%;
+         background:none;
+         position:relative;         
+     }
+     
+     img.media-icon{position:absolute}
+     
+     .media-container {
+    width: 100%;
+    height: 80%;
+    background:none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .social-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .social-box img.media-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+  .social-box:hover {
+    background: rgba(0,0,0,0.2);
+  }
+  
+  div.cyberprojects-title{
+      width:100%;
+      height:10rem;
+      padding:1rem;
+      margin:4rem 0 9rem 0;
+
+  }
+  
+  
+  div.contact-me{
+      width:100%;
+      height:10rem;
+      padding:1rem;
+      margin:4rem 0 3rem 0;
+  }
+
+  div.cyberprojects-title{margin-top:6rem}
+  
+  div#title-image,div#cyberprojects-title-image{
+      margin-bottom:1.5rem;
+}
+
+  p#contact-title,p#cyberprojects-info{
+      color:white;
+  }
+  
+  
+        section.cybersection-table{
+          width:100%;
+          height:27rem;
+          background:none;
+          display:flex;
+          flex-flow:column;
+          justify-content:flex-end;
+          align-items:flex-end;
+          padding:0.5rem;
+          position:relative;
+          margin-top:8rem;
+      }
+      
+      section#cybersection-table-content{
+          width:90%;
+          background:white;
+          border-radius:1rem;
+          padding:0.5rem;
+      }
+      
+      div#cybersection-table-title{
+          width:50%;
+          height:20%;
+          background:none;
+          display:flex;
+          justify-content:flex-end;
+          align-items:flex-end;
+          font-size:1.2rem;
+          padding-bottom: 1rem;
+          font-weight:bold;
+          color:white;
+          
+      }
+      
+      div#cybersection-table-image{
+          position:absolute;
+          top:4%;
+          left:0.5rem;
+          width:53%;
+          height:5rem;
+          border-radius:1rem;
+          border:0.1rem solid white;
+      }
+      
+      img.cybersection-table-image{border-radius:1rem}
+      
+      
+      div.cybersection-content,div.cybersection-contents{
+          width:100%;
+          height:25%;
+          background:none;
+          display:flex;
+      }
+      
+      
+
+      div#cybersection-number{
+          width:20%;
+          height:100%;
+          background:none;
+          padding:1.3rem 0.7rem 1.3rem 0.7rem;
+      }
+      
+      div#cybersection-number-container{
+          width:2.5rem;
+          height:2.5rem;
+          border-radius:50%;
+          background:black;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          color:white;
+          font-weight:bold;
+          
+      }
+      
+      div#cybersection-links{
+          width:80%;
+          height:100%;
+          background:none;
+          display:flex;
+          align-items:center;
+          padding-left:0.5rem;
+          
+      }
+      
+      a.shortcut{
+          color:black;
+          font-weight:bold;
+          text-decoration:0.1rem underline black;
+      }
+      
+      div#cyberprojects-subtitle-image{
+          padding:0.5rem 4rem 0.5rem 0;
+      }
+      
+     
+
+      div#cybersubtitle{  
+          padding:0 6rem 0 0.5rem;
+          margin:6rem 0 2rem 0;
+      }
+      
+      section.tools-section{
+        background:none;
+        height: auto;
+        padding:0 0 0 0.5rem;
+      }
+      
+      section.os-list{
+        width:100%;
+        height:20rem;
+        background:none;
+        margin-top:0;
+        display: flex;
+        overflow-x: auto;
+        padding-left:0.5rem;
+      }
+
+      div.object-container{
+        min-width:15rem;
+        height:100%;
+        border-radius:1rem;
+        background:white;
+        padding:1rem;
+        margin-right:3rem;
+      }
+
+      section#header-container{
+        width:100%;
+        height:15%;
+        background:none;
+        display:flex;
+      }
+
+      div#number-of-object{
+        width:23%;
+        height:100%;
+        border-radius:50%;
+        background:black;
+        margin-right:1rem;
+        color:white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div#name-of-object{
+        width:80%;
+        height:100%;
+        font-size:1.3rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      section.object-used-for{
+        width:100%;
+        height:25%;
+        background:none;
+        padding-top:1rem;
+      }
+
+      section.object-image{
+        width:100%;
+        height:60%;
+        border-radius:1rem;
+      }
+
+      img.object-image{border-radius:1rem}
+
+      /* PROJECTS */
+      
+              
+/* Scroll container */
+.scroll-container {
+    display: flex;
+    gap: 20px;
+    padding:30px 30px 30px 0.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+}
+
+/* Hide scrollbar */
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card */
+.project-card {
+    min-width: 300px;
+    background: #f1f1f1;
+    border-radius: 30px; /* 🔥 smooth curves */
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right:3rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    scroll-snap-align: center;
+    
+}
+
+/* Image section */
+.project-card-image {
+    width:100%;
+    position: relative;
+    height: 180px;
+}
+/* 01 badge */
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+/* Content */
+.card-info {
+    padding: 18px;
+}
+
+.small-title {
+    color: #555;
+    font-size: 14px;
+}
+
+.main-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.desc {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Footer */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Grey placeholders */
+.place-box {
+    width: 80px;
+    height: 30px;
+    background: lightgrey;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+/* Button */
+.view-project {
+    background: #ff4d00;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div#cybersection-projects-introducting{
+     color:white; 
+     width:100%;
+     padding-left:0.5rem;
+     margin-bottom:2rem;
+     font-weight:400;
+     font-size:1rem;
+     background:none;
+     font-family: Georgia,serif;
+}
+
+
+/* DOTS */
+.project-dots, .write-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.project-dot, .write-dot {
+  width: 8px;
+  height: 8px;
+  background: #bbb;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.project-dot.active , .write-dot.active{
+  background: orangered;
+  transform: scale(1.3);
+}
+
+div#cybersection-projects-title{
+    width:100%;
+    height:7rem;
+    margin:0 0 1rem 0;
+}
+
+
+/* WRITEUP SECTION */
+
+      section.write-ups-section{
+        width:100%;
+        height: 23rem;
+        background: none;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        margin:2rem 0 3rem 0;
+        padding:1rem;
+      }
+
+      section.writeup-intro{
+        min-width:20rem;
+        height:100%;
+        background:none;
+        overflow: hidden;
+        scroll-snap-align: center;
+      }
+
+      div#writeup-intro{
+        width:100%;
+        height:55%;
+        background:orangered;
+        padding:0.5rem;
+        border-radius:1rem;
+        margin-bottom: 1rem;
+      }
+
+      section.writeup-picture{
+        width:100%;
+        height:40%;
+        background:none;
+      }
+
+      img.writeup-picture{
+        border-radius: 1rem;
+      }
+
+      div#writeup-header{
+        width:100%;
+        height:25%;
+        background:none;
+        display:flex;
+        color:white;
+      }
+
+      div#writeup-body{
+        width:100%;
+        height:75%;
+        background:none;
+        padding-top:1rem;
+        font-weight:bold;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+
+      div#writeup-section-icon-container{
+        width:14%;
+        height: 90%;
+        background:none;
+      }
+
+      div.writeup-section-icon{
+        width:100%;
+        height:100%;
+        border-radius: 50%;
+        background:white;
+        padding:0.4rem;
+        border:0.1rem solid black;
+      }
+
+      
+
+
+      div#write-ups-section-title-intro{
+        width:83%;
+        height: 100%;
+        background:none;
+        display:flex;
+        align-items:center;
+        padding-left: 1rem;
+        font-size:1.1rem;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+    
+      }
+
+      section.report-container{
+        min-width:20rem;
+        height: 100%;
+        background: white;
+        border-radius: 1rem;
+        margin-left:3rem;
+        padding:0.5rem;
+        overflow: hidden;
+        scroll-snap-align: center;
+      }
+
+      div#report-container-number{
+        width:50%;
+        height:13%;
+        background-color:none;
+      }
+
+      div#report-number{
+        width:30%;
+        height:100%;
+        background:black;
+        color:white;
+        border-radius:50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size:1.1rem;
+      }
+
+
+      section.report-title{
+        width:100%;
+        height:27%;
+        background:none;
+        padding-top:1rem;
+        font-size:1.4rem;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        display:flex;
+        align-items: flex-end;
+        border-bottom: 0.1rem solid grey;
+      }
+
+      section.report-summary{
+        width:100%;
+        height:45%;
+        background:none;
+        padding-top:1rem;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing:2px;
+      }
+
+      div#report-view{
+        width:100%;
+        height:15%;
+        background:none;
+        display: flex;
+        
+        justify-content: flex-end;
+      }
+
+      div#report-view-button{
+        width:8rem;
+        height:100%;
+        border-radius:2rem;
+        background:orangered;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        font-size:1.1rem;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold;
+      }
+
+      section#write-ups-container-title{
+        width:100%;
+        height:6rem;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin-top:7rem;
+      }
+
+      section.write-ups-container-title{
+        width:80%;
+        height:60%;
+      }
+
+
+ /* FOOTER */
+ 
+       footer{
+          width:100%;
+          
+          position:relative;
+          margin-top:3rem;
+      }
+      
+      img.footer-image{z-index:1}
+      
+      section.footer-information{
+          width:100%;
+          height:100%;
+          position:absolute;
+          z-index:2;
+          top:0%;
+          left:0%;
+          background:none;
+      }
+      
+      div#footer-quote{
+          width:76.5%;
+          height:6.7%;
+          background:none;
+            display:flex;
+        align-items: center;
+        font-weight: bold;
+        font-size:0.7em;
+        padding-left:0.5rem;
+      }
+      
+      div#blank-space{
+          width:100%;
+          height:49%;
+          background:none;
+      }
+      
+      div#quick-socials-container{
+          width:100%;
+          height:15.8%;
+          background:none;
+          display:flex;
+          justify-content:space-between;
+      }
+      
+      section.quick-links-container{
+          width:52%;
+          height:100%;
+          display:flex;
+          padding:0.5rem 0 0 0.5rem;
+      }
+      
+      p#links-title{
+          text-decoration:none;
+          color:black;
+          font-weight:bold;
+          white-space: nowrap;
+      }
+      
+      a.links{
+          text-decoration:none;
+          color:black;
+      }
+      
+      p.links{
+          margin-top:0rem;
+      }
+      
+      section.social-medias-container{
+          width:23.5%;
+          height:100%;
+          background:none;  
+          
+      }
+      
+      div#mylogo-info{
+          width:76.5%;
+          height:23.5%;
+          background:none;
+
+      }
+      
+      div#copyrights{
+          width:100%;
+          height:5%;
+          background:none;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          word-spacing: 3px;
+          font-weight:bold;
+          font-size:0.8rem;
+      }
+      
+      div.upper-social-medias,div.lower-social-medias{
+          width:100%;
+          height:50%;
+          background:none;
+          display:flex;
+      }
+      
+      div#footer-social-media-container{
+         width:50%;
+         height:100%;
+         background:none;
+      }
+      
+      
+      /* WEBSECURITY INFO */
+      
+    div#websecurity-title{
+        width:80%;
+        background:none;
+        padding:0.5rem;
+        margin-top:7rem;
+      }
+
+      div#websecurity-info{
+        width:100%;
+        margin-bottom:3rem;
+        padding:0.5rem;
+        color:white;
+      }
+
+      section.websecurity-list{
+        width: 100%;
+        background:none;
+        padding:0.5rem;
+        overflow: auto;
+        display:flex;
+      }
+
+
+      div.websecurity-card{
+        min-width:18rem;
+        background:white;
+        border-radius: 1rem;
+        padding:1rem;
+        margin-right:3rem;
+      }
+
+      div#websecurity-card-title{
+        width:100%;
+        background:orangered;
+        border-radius:3rem;
+        display:flex;
+        padding:0.5rem;
+        font-weight:bold;
+        display: flex;
+        align-items:center;
+        color:white;
+      }
+
+      div#websecurity-card-number{
+        min-width:2.5rem;
+        height:2.5rem;
+        background:black;
+        color:white;
+        border-radius:50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-right:0.5rem;
+      }
+
+
+      div#websecurity-card-info{
+        width:100%;
+        height:85%;
+        background:none;
+        padding-top:1rem;
+      }
+      
+      a.cv-download{text-decoration:none;color:black}
+      
+}
+@media (max-width: 500px){
+    p.links{
+        font-size:0.8rem;
+    }
+
+       div#cybersection-table-title{
+          font-size:1rem;
+      }
+
+      
+/* Card */
+.project-card {
+    min-width: 300px;  
+    margin-right:6rem;
+}
+}
+ 
+</style>
+</head>
+
+<body>
+
+    <section class ="pc-site">
+<!-- NAV -->
+<section class="header-landing">
+    <div id="nemx-logo">
+        <img src="C:\codes\logo4.png">
+    </div>
+
+    <div id="navigation-links">
+        <a href="#">Home</a>
+        <a href="#second-section" class ="spaced-links">About Me</a>
+        <a href="#cybersection-projects-section">Projects</a>
+        <a href="#">Categories</a>
+        <a href="#contact-section">Contact Me</a>
+    </div>
+
+    
+</section>
+
+<!-- HEADER IMAGE -->
+<header>
+    <img class="portfolio_start" src="C:\codes\portfolio-image.png">
+</header>
+
+
+    <!-- SKILLS --->
+           <div class="skills-wrapper">
+                <div class="skills-track">
+                  <span>Digital Storytelling</span>
+                  <span class="diamonds">✦</span>
+                  <span>Storywriter</span>
+                  <span class="diamonds">✦</span>
+                  <span>SOC Analyst Tier 2</span>
+                  <span class="diamonds">✦</span>
+                  <span>Penetration Tester</span>
+                  <span class="diamonds">✦</span>
+                  <span>Web Developer</span>
+                </div>
+            </div>   
+
+
+<!-- SECOND SECTION -->
+
+ 
+        <section class ="second-section" id ="second-section">
+            <section class ="left-side-section">
+                 <div id ="second-section-title">
+                     <img src ="C:/codes/title.png"/>
+                 </div>
+                 <div id ="second-section-intro-paragraph">
+                     <p id ="second-section-intro-paragraph">
+                           I’m a cybersecurity enthusiast and system-focused 
+                           builder who enjoys exploring how digital systems
+                           work beneath the surface — from networks and security 
+                           architecture to web technologies and creative digital
+                           projects.
+                     </p>
+                 </div>
+                 <div class="features">
+
+    <div class="row">
+        <div class="pill filled">CURIOSITY</div>
+        <div class="pill">SYSTEM THINKING</div>
+    </div>
+
+    <div class="row">
+        <div class="pill">CYBERSECURITY</div>
+        <div class="pill filled">CREATIVITY</div>
+    </div>
+
+    <div class="row">
+        <div class="pill">PHILOSOPHY</div>
+    </div>
+
+</div>
+
+                 <section class ="who-am-i-parts">
+                     <section class ="who-am-i-section">
+                        <div id ='subtitle'>
+                         <img src ="C:/codes/whoami3.png"/>
+                        </div>
+                         <div id ="who-am-i-paragraph">
+                            <p id ="hook">I’m a cybersecurity analyst</p> and system-focused builder.
+<br><br>
+                            I’m driven by curiosity—understanding how technology works beneath the surface.
+<br><br>
+                            From networks to application logic, I explore the structure behind digital systems.  
+                         </div>
+                     </section>
+                     <section class ="who-am-i-section">
+                        <div id ='subtitle'>
+                         <img src ="C:/codes/whatido3.png"/>
+                        </div>
+                         <div id ="who-am-i-paragraph">
+                          <p id ="hook">I focus on</p> cybersecurity analysis, penetration testing, and web development.
+<br><br>
+                        I examine systems closely—how they’re built, where they fail, and why.
+<br><br>
+                          
+                         </div>
+                     </section>
+                     <section class ="who-am-i-section">
+                        <div id ='subtitle'>
+                         <img src ="C:/codes/howithink2.png"/>
+                        </div>
+                         <div id ="who-am-i-paragraph">
+                      <p id ="hook">I believe the best</p>builders are not just technical—but thoughtful.
+<br><br>
+                      Understanding a system matters more than just using it.
+<br><br>
+                      I aim to create work that reflects both logic and imagination.
+                         </div>
+                     </section>
+                 </section>
+            </section>
+            <section class ="right-side-section">
+                <img src ="thinker2.png"/>
+            </section>
+        </section>
+
+               <section class="contact-section" id="contact-section">
+                  <img class ="background-image-section-3" src ="C:/codes/section31.png"/>
+                  <section class ="contact-section-2">
+                    <section id ="section3-title">
+                       <img src ="C:/codes/sectiontitle.png"/>
+                    </section>
+                    <div id ="little-logon">
+                         Developer, CyberSecurity Enthusiast and Digital Storyteller
+                    </div>
+                    <section class ="personal-details-section">
+  <div class="contact-card">
+
+    <div class="socials">
+        <div id ="social">
+        <a href ="#" target="_blank" rel="noopener noreferrer">
+          <img id ="social" src ="C:/codes/facebook2.png"/>  
+        </a>
+      </div>
+      <div id ="social">
+        <a href ="https://www.instagram.com/edienemx" target="_blank" rel="noopener noreferrer">
+          <img id ="social" src ="C:/codes/instagram2.png"/>  
+        </a>
+      </div>
+      <div id ="social">
+        <a href ="https://github.com/Nemxfacami" target="_blank" rel="noopener noreferrer">
+          <img id ="social" src ="C:/codes/github2.png"/>  
+        </a>
+      </div>
+      <div id ="social">
+        <a href ="https://www.linkedin.com/in/edie-sibanda-373b2739a" target="_blank" rel="noopener noreferrer">
+          <img id ="social" src ="C:/codes/LinkedIn2.png"/>  
+        </a>
+      </div>
+      <div id ="social">
+        <a href ="https://wa.me/+263789691613">
+          <img id ="social" src ="C:/codes/whatsapp2.png"/>  
+        </a>
+      </div>
+    </div>
+    
+
+    <section class ="my-image">
+      <img id ="my-image" src ="C:/codes/me3.png"/> 
+    </section>
+    <section id ="personal-details-side">
+        <div id ="personal-details-container">
+            <div id ="logo-container">
+            <p id ="userdetails-title">
+              NAME AND LASTNAME
+            </p>
+            <p id ="user-info">
+              Edie Sibanda
+            </p>
+            <div id ="logo-side-container">
+               <img src="C:/codes/logoc2.png"/>
+            </div>
+            </div>
+            <p id ="userdetails-title">
+              EMAIL
+            </p>
+            <p id ="user-info">
+              ediesibanda0010@gmail.com
+            </p>
+            <p id ="userdetails-title">
+              LOCATION
+            </p>
+            <p id ="user-info">
+              Zimbabwe and South Africa
+            </p>
+            <p id ="userdetails-title">
+              CONTACTS
+            </p><br>
+            <p id ="user-info">
+              SA : +27 640 893 160 <br>
+              ZIM :+263 789 691 613
+            </p>
+        </div>
+        <div id ="cv-downloader">
+          <div id="download-cv-title">Download CV/Resume</div>
+          <button id="download-cv">
+            <a href ="C:/codes/CV resume (2).pdf" download target="_blank"><img src ="C:/codes/downloads.png"/></a>
+          </button>
+        </div>
+    </section>
+  </div>
+  </section>
+</section>
+</section>
+
+<!---  FOURTH SECTION-->
+
+
+
+          <section class ="cybersection-section" id ="cybersection">
+            <img class ="cyber-background" src ="C:/codes/section4back4.png"/>
+             <section class ="cyber-upper-section">
+                 <div id ="cyber-title">
+                    <img src ="C:/codes/cyber-title1.png"/>
+                 </div>
+                  <div id ="cyber-navigation">
+
+                 </div>
+             </section>
+             <section class ="cyber-lower-section">
+                    <div id ="cyber-intro-paragraph">
+                        This section showcases a collection of projects and technical explorations focused on
+cybersecurity and system architecture. From analyzing network behavior to experimenting with
+security vulnerabilities, each project represents hands-on learning.
+                    </div>
+                    <div id ="cyber-intro-pic">
+                      <img class ="intro-pic" src ="C:/codes/start2.png"/>
+                    </div>
+                    <section class ="cyber-table-container">
+                        <div id ="cyber-table-title">
+                            Table of Content
+                        </div>
+                        <div id ="cyber-table-info">
+
+<div class="table-section">
+    <div class="table-circle">1</div>
+    <div class="table-title"><a class ="cyber-table-shortcuts" href ="#tools-section">Security Tools & Environments</a></div>
+</div>
+
+<div class="table-section">
+    <div class="table-circle">2</div>
+    <div class="table-title"><a class ="cyber-table-shortcuts" href ="#cybersection-projects-section">Cybersecurity Projects</a></div>
+</div>
+
+<div class="table-section">
+    <div class="table-circle">3</div>
+    <div class="table-title"><a class ="cyber-table-shortcuts" href ="#websecurity-section-holder">Web Application Security</a></div>
+</div>
+
+<div class="table-section">
+    <div class="table-circle">4</div>
+    <div class="table-title"><a class ="cyber-table-shortcuts" href ="#write-ups-container-title">Security Write-Ups</a></div>
+</div>
+<!--<div class="table-section">
+    <div class="table-circle">5</div>
+    <div class="table-title">Digital Forensics</div>
+</div>-->
+
+                        </div>
+                    </section>
+             </section>
+
+             <section class ="cyber-image-section">
+                 <img src ="C:/codes/hacker.png"/>
+             </section>
+          </section>
+
+
+          
+    <section class ="security-env-title">
+        <div class ="security-env-title">
+           <img src ="C:/codes/securitytools1.png"/>
+        </div>
+        <div class ="security-env-paragraph">
+            This section outlines the tools and lab environments I use to analyse systems,
+            perform security testing, and study how vulnerabilities emerge in controlled 
+            conditions.
+        </div>
+    </section>
+
+          <section class ="tools-section" id ="tools-section">
+        <div id ="subtitle-img">
+            <img src ="C:/codes/subtitle11.png"/>
+        </div>
+
+        <!-- THE LIST OF THE OS SYSTEM I USE -->
+
+        <section class ="os-list">
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       01
+                    </div>
+                    <div id ="name-of-object">
+                        Kali Linux
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Primary security testing environment
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/kalilinux.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       02
+                    </div>
+                    <div id ="name-of-object">
+                        Parrot OS 
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                      Alternative penetration testing platform
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/parrot.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       03
+                    </div>
+                    <div id ="name-of-object">
+                        Windows
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Testing and compatibility analysis
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/windows.png"/>
+                </section>
+            </div>
+
+
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       04
+                    </div>
+                    <div id ="name-of-object">
+                        Ubuntu Server 
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Lab-based server simulations
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/ubuntuserver.png"/>
+                </section>
+            </div>
+  </section>
+      </section>
+
+      <section class ="tools-section">
+        <div id ="subtitle-img">
+            <img src ="C:/codes/subtitle2.png"/>
+        </div>
+
+        <!-- THE LIST OF THE OS SYSTEM I USE -->
+
+        <section class ="os-list">
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       01
+                    </div>
+                    <div id ="name-of-object">
+                        Namp
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Network scanning and service enumeration.
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/nmap.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       02
+                    </div>
+                    <div id ="name-of-object">
+                        Netcat
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                      Manual connection testing and interaction
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/netcat.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       03
+                    </div>
+                    <div id ="name-of-object">
+                        Wireshark
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Packet-level network traffic analysis
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/Wireshark.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       04
+                    </div>
+                    <div id ="name-of-object">
+                        TCPdump
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Command-line packet inspection
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/tcpdump.png"/>
+                </section>
+            </div>
+        </section>
+      </section>
+
+
+      <!-- -->
+
+         <section class ="tools-section" style ="margin-top:4rem">
+        <div id ="subtitle-img">
+            <img src ="C:/codes/subtitle3.png"/>
+        </div>
+     <!--   <div id ="section-title-bio">
+            This section outlines the tools and lab environments I use to analyse<br> systems,
+            perform security testing, and study how vulnerabilities emerge in <br>controlled 
+            conditions.
+        </div>-->
+
+        <!-- THE LIST OF THE OS SYSTEM I USE -->
+        <section class ="os-list">
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       01
+                    </div>
+                    <div id ="name-of-object">
+                        Burpsuite
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Intercepting and analyzing HTTP requests
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/burp.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       02
+                    </div>
+                    <div id ="name-of-object">
+                        Curl
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                      Crafting and testing HTTP requests manually
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/curl.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       03
+                    </div>
+                    <div id ="name-of-object">
+                        Gobuster
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Directory and endpoint discovery
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/gobuster.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       04
+                    </div>
+                    <div id ="name-of-object">
+                        Ffuf
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Testing to discover hidden or unintended parts of a system
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/ffuf1.png"/>
+                </section>
+            </div>
+
+            
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       05
+                    </div>
+                    <div id ="name-of-object">
+                        SQLmap
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                    To detect and exploit SQl injection vulnerabilities in web applications
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/sqlmap.png"/>
+                </section>
+            </div>
+        </section>
+      </section>
+
+
+      
+      <section class ="tools-section">
+        <div id ="subtitle-img">
+            <img src ="C:/codes/subtitle4.png"/>
+        </div>
+
+        <!-- THE LIST OF THE OS SYSTEM I USE -->
+
+        <section class ="os-list">
+            <div class ="object-container" style ="width:18rem">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       01
+                    </div>
+                    <div id ="name-of-object">
+                        Metasploit framework
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Vulnerabilities testing in lab environments
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/metasploit1.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container" style ="width:18rem">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       02
+                    </div>
+                    <div id ="name-of-object">
+                        Searchsploit
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                      Vulnerability reseach and exploit references
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/searchsploit.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container" style ="width:18rem" >
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       03
+                    </div>
+                    <div id ="name-of-object">
+                        Hydra
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     authentication testing in controlled environments
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/hydra.png"/>
+                </section>
+            </div>
+  </section>
+      </section>
+
+      
+      <section class ="tools-section">
+        <div id ="subtitle-img">
+            <img src ="C:/codes/subtitle5.png"/>
+        </div>
+
+        <!-- THE LIST OF THE OS SYSTEM I USE -->
+
+        <section class ="os-list">
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       01
+                    </div>
+                    <div id ="name-of-object">
+                        Python
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Scripting and automation
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/python.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       02
+                    </div>
+                    <div id ="name-of-object">
+                        Bash
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                      Command-line workflow and task automation
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/bash.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       03
+                    </div>
+                    <div id ="name-of-object">
+                        Git
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Version control and project tracking
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/git.png"/>
+                </section>
+            </div>
+
+
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       04
+                    </div>
+                    <div id ="name-of-object">
+                        VS Code
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Development and documentation
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/vscode.png"/>
+                </section>
+            </div>
+  </section>
+      </section>
+
+
+      
+      <section class ="tools-section">
+        <div id ="subtitle-img">
+            <img src ="C:/codes/subtitle61.png"/>
+        </div>
+
+        <!-- THE LIST OF THE OS SYSTEM I USE -->
+
+        <section class ="os-list">
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       01
+                    </div>
+                    <div id ="name-of-object">
+                        Oracle VirtualBox
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Isolated virtual environments 
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/virtualbox.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       02
+                    </div>
+                    <div id ="name-of-object">
+                        Metasploitable
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                      Vulnerable system analysis
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/metasploit1.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       03
+                    </div>
+                    <div id ="name-of-object">
+                        DVWA
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Web vulnerability testing 
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/dvwa.png"/>
+                </section>
+            </div>
+
+
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       04
+                    </div>
+                    <div id ="name-of-object">
+                        OWASP JUICE shop
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Modern web application security testing
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/juiceshop.png"/>
+                </section>
+            </div>
+
+            
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       05
+                    </div>
+                    <div id ="name-of-object">
+                        TryHackMe
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Build foundational knowledge and guided skills,to learning
+                     concepts and techniques.
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/thm.png"/>
+                </section>
+            </div>
+
+            
+
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       06
+                    </div>
+                    <div id ="name-of-object">
+                        HackTheBox
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Practice independent problem-solving and simulate real-world attack
+                     scenarios.
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="C:/codes/htb.png"/>
+                </section>
+            </div>
+
+        
+
+  </section>
+      </section>
+
+
+          <section class ="cybersection-projects-section" id ="cybersection-projects-section">
+        <div id ="cybersection-projects-title">
+            <img src ="C:/codes/cybersecurityprojects.png"/>
+        </div>
+        <div id ="cybersection-projects-introducting">
+            These projects showcase my approach to cybersecurity through hands-on exploration, strategic
+analysis, and problem-solving. Each project focuses on understanding systems from the ground
+up — identifying entry points, analyzing vulnerabilities, and observing system behavior — while
+emphasizing responsible methodology and real-world application.
+        </div>
+     </section>
+
+<div class="scroll-container">
+  
+    <!-- Card 1 -->
+    <div class="card">
+        <div class="card-image">
+            <img class ="card-image" src ="C:/codes/cdn.png"/>
+            <div class="badge">01</div>
+        </div>
+        <div class="card-content">
+            <div class="small-title">title</div>
+            <div class="main-title">Origin Server Exposure vs CDN</div>
+            <div class="desc">
+                Analysis of exposure, security, and attack surface.
+            </div>
+
+            <div class="card-footer">
+                <div style="display:flex; gap:10px;">
+                    <div class="box">CDN</div>
+                    <div class="box">Server</div>
+                </div>
+                <a href="C:/codes/CDN vs Direct Server.pdf" download class="btn">View</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="card-image">
+            <div class="badge">02</div>
+        </div>
+        <div class="card-content">
+            <div class="small-title">overview</div>
+            <div class="main-title">CDN Protection Layers</div>
+            <div class="desc">
+                Learn how CDNs shield origin servers from attacks.
+            </div>
+
+            <div class="card-footer">
+                <div style="display:flex; gap:10px;">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <a href="#" class="btn">View</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <div class="card-image">
+            <div class="badge">03</div>
+        </div>
+        <div class="card-content">
+            <div class="small-title">analysis</div>
+            <div class="main-title">Network Defense Systems</div>
+            <div class="desc">
+                Firewalls, DMZ, and modern infrastructure security.
+            </div>
+
+            <div class="card-footer">
+                <div style="display:flex; gap:10px;">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <a href="#" class="btn">View</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<section class ="websecurity-section-holder" id ="websecurity-section-holder">
+    <section class ="websecurity-section-title">
+         <img src ="C:/codes/webappsecuirty.png"/>
+    </section>
+    <div class ="websecurity-section-intro">
+        This section focuses on understanding how web applications communicate,
+        process input, and manange user sessions, and how these behaviors impact security.
+    </div>
+   <section class ="websecurity-section">
+      <section class ="webpara-header">
+         <section id ="webpara-number">
+             <div class ="webpara-number-container">
+                <div id ="webpara-number-container">
+                    01
+                </div>
+             </div>
+             <div class ="webpara-title">
+                  HTTP Communication Model
+             </div>
+         </section>
+
+          <section id ="webpara-number">
+             <div class ="webpara-number-container">
+                <div id ="webpara-number-container">
+                    02
+                </div>
+             </div>
+             <div class ="webpara-title">
+                  Request Components & Behavior
+             </div>
+         </section>
+
+          <section id ="webpara-number">
+             <div class ="webpara-number-container">
+                <div id ="webpara-number-container">
+                    03
+                </div>
+             </div>
+             <div class ="webpara-title">
+                  Authe & Session Management
+             </div>
+         </section>
+      </section>
+
+      <section class ="webpara-containers-info">
+         <div class ="webpara-info">
+            Web applications rely on HTTP/HTTPS for communication between client and server.  <br><br>
+            Each interaction follows a request–response cycle that defines how data is exchanged. <br><br> 
+            Methods like GET and POST determine how information is requested or submitted.  <br><br>
+            Understanding this model is essential for analyzing application behavior.
+         </div>
+         <div class ="webpara-info">
+            HTTP requests contain headers, parameters, and sometimes cookies that shape server interaction.  <br><br>
+            Headers can reveal technologies, policies, and server configurations.  <br><br>
+            Modifying request components can change how the application responds.  <br><br>
+            This helps in understanding logic and uncovering hidden behavior.
+         </div>
+         <div class ="webpara-info">
+            Authentication systems validate user identity through credentials submitted to the server.  <br><br>
+            Once verified, the server creates a session to maintain the user’s state.  <br><br>
+            Session tokens or cookies are used to persist authentication across requests.  <br><br>
+            Understanding session handling is key to analyzing access control mechanisms.
+         </div>
+      </section>
+
+   <br><br><br>
+   <section class ="webpara-header">
+         <section id ="webpara-number">
+             <div class ="webpara-number-container">
+                <div id ="webpara-number-container">
+                    04
+                </div>
+             </div>
+             <div class ="webpara-title">
+                  Surface Mapping (Enumeration)
+             </div>
+         </section>
+
+          <section id ="webpara-number">
+             <div class ="webpara-number-container">
+                <div id ="webpara-number-container">
+                    05
+                </div>
+             </div>
+             <div class ="webpara-title">
+                  Input Handling & Risk Areas
+             </div>
+         </section>
+
+          <section id ="webpara-number">
+             <div class ="webpara-number-container">
+                <div id ="webpara-number-container">
+                    06
+                </div>
+             </div>
+             <div class ="webpara-title">
+                  Server Response Behavior
+             </div>
+         </section>
+      </section>
+
+      <section class ="webpara-containers-info">
+         <div class ="webpara-info">
+            Web applications expose multiple endpoints such as directories, APIs, and hidden routes.<br><br>  
+            Identifying these expands the visible attack surface of the application.  <br><br>
+            Enumeration helps reveal functionality not immediately visible on the interface.  <br><br>
+            This process forms the foundation for deeper security analysis.
+         </div>
+         <div class ="webpara-info">
+            Web applications process user input through forms, parameters, and request bodies.  <br><br>
+            Improper handling of this input can lead to unexpected behavior or vulnerabilities.  <br><br>
+            Validating and sanitizing input is critical for maintaining security.  <br><br>
+            Understanding this helps identify areas where applications may be at risk.
+         </div>
+         <div class ="webpara-info">
+         Server responses include status codes, headers, and content that reflect backend behavior.  <br><br>
+         Different responses can indicate access control, errors, or misconfigurations.  <br><br>
+         Analyzing these responses helps in understanding how the system processes requests.  <br><br>
+         It also provides insight into potential weaknesses in the application.
+         </div>
+      </section>
+   </section>
+   </section>
+
+   
+    <section id ="write-ups-container-title">
+        <section class ="write-ups-container-title">
+            <img src ="C:/codes/writeups.png"/>
+        </section>
+    </section>
+
+     <section class ="write-ups-section" id ="write-ups-section">
+         <section class ="writeup-intro">
+            <div id ="writeup-intro">
+                <div id ="writeup-header">
+                     <div id ="writeup-section-icon-container">
+                        <div class ="writeup-section-icon">
+                           <img class ="writeup-icon" src ="C:/codes/report (1).png"/>
+                        </div>
+                     </div>
+                     <div id ="write-ups-section-title-intro">
+                         Review My Reports
+                     </div>
+                </div>
+                <div id ="writeup-body">
+                   This section showcases a collection of my cybersecurity write-ups,where I document and analyze real-world
+                   vulnerabilities and hands-on security challenges.
+                </div>
+            </div>
+             <section class ="writeup-picture">
+              <img class ="writeup-picture" src ="C:/codes/reportpic3.png"/>
+         </section>
+         </section>
+
+         <section class ="report-container">
+            <div id ="report-container-number">
+                <div id ="report-number">
+                   01
+                </div>
+            </div>
+
+            <section class ="report-title">
+                SQL Injection via Product Category Filter
+            </section>
+
+            <section class ="report-summary">
+                The application is vulnerable to SQL injection in the product category filter parameter. 
+                By manipulating the category parameter, it is possible to perform a UNION-based SQL injection.
+            </section>
+
+            <div id ="report-view">
+                <a href ="1SQLInjectionviaProductCategoryFilter.md" target ="_blank">
+                    <div id ="report-view-button">
+                       View
+                    </div>
+                </a>
+            </div>
+         </section>
+
+
+                   <section class ="report-container">
+            <div id ="report-container-number">
+                <div id ="report-number">
+                   02
+                </div>
+            </div>
+
+            <section class ="report-title">
+                Blind OS Command Injection Leading to Remote Command Execution
+            </section>
+
+            <section class ="report-summary">
+                User-controlled input is passed into a backend shell command without proper sanitization,
+                 allowing arbitrary command execution.
+               
+            </section>
+
+            <div id ="report-view">
+                <a href ="3BlindOSCommandInjection.md" target="_blank">
+                    <div id ="report-view-button">
+                       View
+                    </div>
+                </a>
+            </div>
+         </section>
+
+
+          <section class ="report-container">
+            <div id ="report-container-number">
+                <div id ="report-number">
+                   03
+                </div>
+            </div>
+
+            <section class ="report-title">
+                Authentication Bypass via Improper Session Enforcement
+            </section>
+
+            <section class ="report-summary">
+                The application allows users to access protected account functionality before completing the 
+                second authentication factor. By directly requesting the account using the session cookie issued 
+                after primary authentication.
+            </section>
+
+            <div id ="report-view">
+                <a href ="2FAbypass.md" target ="_blank">
+                    <div id ="report-view-button">
+                       View
+                    </div>
+                </a>
+            </div>
+         </section>
+
+
+
+          <section class ="report-container">
+            <div id ="report-container-number">
+                <div id ="report-number">
+                   04
+                </div>
+            </div>
+
+            <section class ="report-title">
+                Horizontal Privilege Escalation via GUID-Based User ID
+            </section>
+
+            <section class ="report-summary">
+                While exploring the user account pages, I found that the application
+                 allows users to access other users’ account data by manipulating a user ID parameter.
+            </section>
+
+            <div id ="report-view">
+                <a href ="2FAbypass.md" target ="_blank">
+                    <div id ="report-view-button">
+                       View
+                    </div>
+                </a>
+            </div>
+         </section>
+
+
+                   <section class ="report-container">
+            <div id ="report-container-number">
+                <div id ="report-number">
+                   05
+                </div>
+            </div>
+
+            <section class ="report-title">
+                Directory Traversal Vulnerability Allowing Access to Sensitive Files
+            </section>
+
+            <section class ="report-summary">
+                The application is vulnerable to directory traversal via a user-controlled file path parameter.
+                When I can manipulate the file path to access files their not intended to access.
+                This allows unauthorized reading of sensitive system files.
+            </section>
+
+            <div id ="report-view">
+                <a href ="4DirectoryTraversalVulnerability.md" target ="_blank">
+                    <div id ="report-view-button">
+                       View
+                    </div>
+                </a>
+            </div>
+         </section>
+
+
+
+     </section>
+
+
+
+     
+
+    
+
+    <section class ="header-of-headers">
+       <div class ="headers-name-side">
+           <div id ="header-name">
+              ANY OTHER THOUGHTS?
+           </div>
+
+           <div id ="header-pic">
+              <img src ="C:/codes/arrowcontactme2.png"/>
+           </div>
+       </div>
+       <div class ="contact-us-side">
+          <a href ="tel:+263789691613">
+              <img src ="C:/codes/contactme.png"/>
+          </a>
+       </div>
+    </section>
+
+
+      <footer class ="footer-section">
+         <img src ="C:/codes/footerpic.png"/>
+         <section class ="footer-info">
+         <header class ="footer-header">
+             "Systems don't fail randomly - they reveal what was always there."
+         </header>
+
+  
+         <section id ="saving-space">
+
+         </section>
+
+
+         <section class ="footer-bottom">
+            <section class ="footer-bottom-left">
+         <section id ="links-and-media">
+            
+            <section id ="quick-links">
+                 <div id ="quick-links">
+                    <p id ="links-title">
+                       Quick Links
+                    </p>
+                    <a class ="links" href ="#second-section">
+                        <p class ="links">About Me</p>
+                    </a>
+                    <a class ="links" href ="#cybersection-projects-section">
+                        <p class ="links">Projects</p>
+                    </a>
+                    <a class ="links" href ="#cybersection">
+                        <p class ="links">Cybersecurity</p>
+                    </a>
+                    <a class ="links" href ="#contact-section">
+                        <p class ="links">Contact Me</p>
+                    </a>
+                 </div>
+
+                 <div id ="others">
+                    <p id ="links-title">
+                       Legal
+                    </p>
+                    <a class ="links" href ="#">
+                        <p class ="links">Privacy Policy</p>
+                    </a>
+                    <a class ="links" href ="#">
+                        <p class ="links">Term & Conditions</p>
+                    </a>
+                    <a class ="links" href ="#">
+                        <p class ="links">Disclaimer</p>
+                    </a>
+                 </div>
+            </section>
+
+            <section class ="social-media-links">
+                <div class ="upper-socials">
+                    <div id="social-box">
+                      <a href ="https://www.linkedin.com/in/edie-sibanda-373b2739a" target="_blank" rel="noopener noreferrer">
+                         <img src ="C:/codes/linkedin.png"/>
+                      </a>
+                    </div>
+                    <div id ="social-box">
+                      <a href ="#">
+                         <img src ="C:/codes/facebook.png"/> 
+                      </a>
+                    </div>
+                </div>
+                 <div class ="lower-socials">
+                    <div id="social-box">
+                      <a href ="https://www.instagram.com/edienemx" target="_blank" rel="noopener noreferrer">
+                         <img src ="C:/codes/instagram.png"/>                 
+                      </a>
+                    </div>
+                    <div id ="social-box">
+                      <a href ="https://github.com/Nemxfacami" target="_blank" rel="noopener noreferrer">
+                         <img src ="C:/codes/github.png"/> 
+                      </a>
+                    </div>
+                </div>
+            </section>
+         </section>
+
+
+         <!-- Logo -->
+
+            <section class ="nemx-logo">
+               <div id ="nemx-detials">
+                <p>Cybersecurity | System Analysis | System Builder</p><br>
+                  <b><p>Everything reveals itself eventually - if you look long enough. Understanding procedes action.</p></b>
+               </div>
+            </section>
+
+              <section class ="footer-copyright">
+                 © 2026 Nemx. Observing. Reconstructing. Revealing.
+              </section>
+
+         </section>
+
+                  <!--- section bottom right -->
+
+         <section class ="footer-bottom-right">
+            <div id ="back-to-top-content">
+                <div id ="back-to-top">
+                    <a href ="#" style ="color:black;font-weight: bold;">Back To The Top</a>
+                </div>
+            </div>
+         </section>
+
+         </section>
+
+
+
+
+        </section>
+      </footer>
+</section>
+
+<section class ="mobile-site">
+      
+
+     <header class ="hero-section">
+         <img class ="hero-image" src ="heropic2.png"/>
+         
+         
+       <!-- NAV -->
+         <section class="header-landing">
+            <div id="nemx-logo">
+              <img src="mlogo2.png">
+            </div>
+
+            <div id="navigation-links">
+                 <a href="#">Home</a>
+                 <a href="#contact-me" class ="spaced-links">About Me</a>
+                 <a href="#cybersection-projects-section">Projects</a>
+            </div>
+         </section>
+         
+        <!-- SKILLS --->
+           <div class="skills-wrapper">
+                <div class="skills-track">
+                  <span>Digital Storytelling</span>
+                  <span class="diamonds">✦</span>
+                  <span>Storywriter</span>
+                  <span class="diamonds">✦</span>
+                  <span>SOC Analyst Tier 2</span>
+                  <span class="diamonds">✦</span>
+                  <span>Penetration Tester</span>
+                  <span class="diamonds">✦</span>
+                  <span>Web Developer</span>
+                </div>
+            </div>   
+    </header>
+
+
+     <!--- SECOND SECTION -->
+     
+     <section class ="second-section-introduction">
+         <div id ="second-section-title">
+             <img src ="title.png"/>
+         </div>
+         <div id ="second-section-information">
+                I’m a cybersecurity enthusiast and system-focused 
+                builder who enjoys exploring how digital systems
+                work beneath the surface.
+         </div>
+         
+         <!---  PILL OF ABILITIES --->
+                 <div class="features">
+
+                     <div class="row">
+                       <div class="pill filled">CURIOSITY</div>
+                       <div class="pill">SYSTEM THINKING</div>
+                     </div>
+
+                     <div class="row">
+                        <div class="pill">CYBERSECURITY</div>
+                        <div class="pill filled">CREATIVITY</div>
+                     </div>
+
+                     <div class="row">
+                        <div class="pill">PHILOSOPHY</div>
+                     </div>
+
+                  </div>
+
+            <!-- KNOW WHO,WHAT AND HOW  ABOUT ME --->
+            
+            <section class ="what-who-how-section">
+                  <section class ="question-container">
+                     <div id ="question-box">
+                         <img src ="whoami3.png"/>
+                     </div>
+                     <div id ="answer-box">
+                           I’m a cybersecurity analyst and system-focused builder.
+
+                            From networks to application logic, I explore the structure behind digital systems.  
+                                              
+                     </div>
+                  </section>
+                  
+                  <section class ="question-container">
+                     <div id ="question-box">
+                         <img src ="whatido3.png"/>
+                     </div>
+                     <div id ="answer-box">
+                        I focus on cybersecurity analysis, penetration testing, and web development.
+<br><br>
+                        I examine systems closely—how they’re built, where they fail, and why.
+<br><br>
+                                         
+                     </div>
+                  </section>
+                  
+                  <section class ="question-container">
+                     <div id ="question-box">
+                         <img src ="howithink2.png"/>
+                     </div>
+                     <div id ="answer-box">
+                      I believe the best builders are not just technical—but thoughtful.
+
+                      Understanding a system matters more than just using it.
+                      
+                      I aim to create work that reflects both logic and imagination.
+                                     
+                     </div>
+                  </section>
+            </section>
+     </section>
+
+
+<!-- CONTACT ME -->
+<div class ="contact-me" id ="contact-me">
+     <div id ="title-image">
+        <img src ="sectiontitle.png"/>
+     </div>
+     <p id ="contact-title">Developer,Cybersecurity Enthusiast and Digital Storyteller</p>
+</div>
+
+
+<div class="card-list">
+
+  <!-- CARD 1 -->
+  <div class="card">
+    <img src="me4.png" class="main-img">
+    <img src="logome.png" class="logo">
+
+    <div class="card-content">
+      <p id ="title-title">NAME</p>
+      <div class="title">Edie Sibanda</div>
+
+      <div class="location">
+        Email: ettnemxfacami671@gmail.com
+      </div>
+
+      <div class="bottom-row">
+        <div class="price">Open to Work</div>
+        <button class="btn">
+          <a class ="cv-download" href ="CV resume (2).pdf" download target="_blank">Download CV</a></button>
+      </div>
+    </div>
+  </div>
+
+<!-- CARD 2 INFO -->
+
+<div class="card-contact-info">
+  <img src="mylogo1.png"/>
+
+  <div class="blur-box-info">
+    <div id ="location-me">
+         <div id ="location-icon">
+             <img class ="location-icon" src ="location.png"/>
+         </div>
+         <p id ="location-title">
+             Location
+         </p>
+     </div>
+     <ul>
+     
+     <li> South Africa</li>
+     <li> Zimbabwe</li>
+     </ul>
+     
+     <div id ="location-me">
+         <div id ="location-icon">
+             <img class ="location-icon" src ="contactmee.png"/>
+         </div>
+         <p id ="location-title">
+             Contact Me 
+         </p>
+     </div>
+     <ul>
+     
+     <li> +27 638 327 2627</li>
+     <li> +263 78 969 1613</li>
+     </ul>
+  </div>
+</div>
+
+
+  <!-- CARD 3 -->
+ <div class="card-contact-info">
+  <img src="mylogo1.png"/>
+
+  <div class="blur-box-info" style ="display:flex;align-items:center">
+
+
+
+<div class="media-container">
+
+  <a href="https://instagram.com/edienemx" class="social-box" target="_blank" rel="noopener noreferrer">
+    <img class ="media-icon" src="instagram.png" alt="Instagram">
+  </a>
+
+  <a href="https://linkedin.com/in/edie-sibanda-373b2739a" class="social-box" target="_blank" rel="noopener noreferrer">
+    <img class ="media-icon" src="linkedin.png" alt="LinkedIn">
+  </a>
+
+  <a href="https://wa.me/+263789691613" class="social-box" target="_blank" rel="noopener noreferrer">
+    <img class ="media-icon" src="whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <a href="https://github.com/Nemxfacami" class="social-box" target="_blank" rel="noopener noreferrer">
+    <img class ="media-icon" src="github.png" alt="GitHub">
+  </a>
+
+</div>
+  </div>
+</div> 
+
+</div>
+
+<!-- DOT INDICATOR -->
+<div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+
+<div class ="cyberprojects-title" id ="cyberprojects-title">
+     <div id ="cyberprojects-title-image">
+        <img src ="cyber-title1.png"/>
+     </div>
+     <p id ="cyberprojects-info">                        This section showcases a collection of projects and technical explorations focused on
+cybersecurity and system architecture. From analyzing network behavior to experimenting with
+security vulnerabilities, each project represents hands-on learning.
+                  </p>
+</div>
+
+
+      <section class ="cybersection-table">
+          <div id ="cybersection-table-image">
+              <img class ="cybersection-table-image" src  ="start2.png"/>
+          </div>
+          <div id ="cybersection-table-title">
+             Table of Content
+          </div>
+          <section id ="cybersection-table-content">
+             <div class ="cybersection-content">
+                 <div id ="cybersection-number">
+                     <div id ="cybersection-number-container">
+                         1
+                     </div>
+                 </div>
+                 <div id ="cybersection-links">
+                     <a class ="shortcut" href ="#environments">Security Tools & Environments</a>
+                 </div>
+             </div>
+             <div class ="cybersection-contents">
+                 <div id ="cybersection-number">
+                     <div id ="cybersection-number-container">
+                         2
+                     </div>
+                 </div>
+                 <div id ="cybersection-links">
+                     <a class ="shortcut" href ="#cybersection-projects-section">Cybersecurity Projects</a>
+                 </div>
+             </div>
+             <div class ="cybersection-contents">
+                 <div id ="cybersection-number">
+                     <div id ="cybersection-number-container">
+                         3
+                     </div>
+                 </div>
+                 <div id ="cybersection-links">
+                     <a class ="shortcut" href ="#write-ups-container-title">Security Write-ups</a>
+                 </div>
+             </div>
+             <div class ="cybersection-contents">
+                 <div id ="cybersection-number">
+                     <div id ="cybersection-number-container">
+                         4
+                     </div>
+                 </div>
+                 <div id ="cybersection-links">
+                     <a class ="shortcut" href ="#websecurity-title">Web Application Security </a>
+                 </div>
+             </div>
+          </section>
+      </section>
+      
+      
+<div class ="cyberprojects-title" id ="cyberprojects-title">
+     <div id ="cyberprojects-subtitle-image">
+        <img src ="securitytools1.png"/>
+     </div>
+     <p id ="cyberprojects-info" style ="padding-top:1rem">
+            This section outlines the tools and lab environments I use to analyse systems,
+            perform security testing, and study how vulnerabilities emerge in controlled 
+            conditions. 
+                  </p>
+</div>
+
+
+
+
+          <section class ="tools-section" id ="tools-section">
+
+<div id ="cybersubtitle" class ="cybersubtitle">
+    <img id ="environments" src ="subtitle11.png"/>
+</div>
+
+
+        <!-- THE LIST OF THE OS SYSTEM I USE -->
+
+        <section class ="os-list">
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       01
+                    </div>
+                    <div id ="name-of-object">
+                        Kali Linux
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Primary security testing environment
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="kalilinux.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       02
+                    </div>
+                    <div id ="name-of-object">
+                        Parrot OS 
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                      Alternative penetration testing platform
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="parrot.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       03
+                    </div>
+                    <div id ="name-of-object">
+                        Windows
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Testing and compatibility analysis
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="windows.png"/>
+                </section>
+            </div>
+
+
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       04
+                    </div>
+                    <div id ="name-of-object">
+                        Ubuntu Server 
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Lab-based server simulations
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="ubuntuserver.png"/>
+                </section>
+            </div>
+  </section>
+      </section>
+
+      <section class ="tools-section">
+
+<div id ="cybersubtitle">
+    <img src ="subtitle2.png"/>
+</div>
+
+
+        <!-- THE LIST OF THE OS SYSTEM I USE -->
+
+        <section class ="os-list">
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       01
+                    </div>
+                    <div id ="name-of-object">
+                        Namp
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Network scanning and service enumeration.
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="nmap.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       02
+                    </div>
+                    <div id ="name-of-object">
+                        Netcat
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                      Manual connection testing and interaction
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="netcat.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       03
+                    </div>
+                    <div id ="name-of-object">
+                        Wireshark
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Packet-level network traffic analysis
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="Wireshark.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       04
+                    </div>
+                    <div id ="name-of-object">
+                        TCPdump
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Command-line packet inspection
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="tcpdump.png"/>
+                </section>
+            </div>
+        </section>
+      </section>
+
+
+      <!-- -->
+
+         <section class ="tools-section" style ="margin-top:4rem">
+
+<div id ="cybersubtitle">
+    <img src ="subtitle3.png"/>
+</div>
+
+
+
+        <!-- THE LIST OF THE OS SYSTEM I USE -->
+        <section class ="os-list">
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       01
+                    </div>
+                    <div id ="name-of-object">
+                        Burpsuite
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Intercepting and analyzing HTTP requests
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="burp.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       02
+                    </div>
+                    <div id ="name-of-object">
+                        Curl
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                      Crafting and testing HTTP requests manually
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="curl.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       03
+                    </div>
+                    <div id ="name-of-object">
+                        Gobuster
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Directory and endpoint discovery
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="gobuster.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       04
+                    </div>
+                    <div id ="name-of-object">
+                        Ffuf
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Testing to discover hidden or unintended parts of a system
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="ffuf1.png"/>
+                </section>
+            </div>
+
+            
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       05
+                    </div>
+                    <div id ="name-of-object">
+                        SQLmap
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                    To detect and exploit SQl injection vulnerabilities in web applications
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="sqlmap.png"/>
+                </section>
+            </div>
+        </section>
+      </section>
+
+
+      
+      <section class ="tools-section">
+
+<div id ="cybersubtitle">
+    <img src ="subtitle4.png"/>
+</div>
+
+
+        <!-- THE LIST OF THE OS SYSTEM I USE -->
+
+        <section class ="os-list">
+            <div class ="object-container" style ="width:18rem">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       01
+                    </div>
+                    <div id ="name-of-object">
+                        Metasploit framework
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Vulnerabilities testing in lab environments
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="metasploit1.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container" style ="width:18rem">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       02
+                    </div>
+                    <div id ="name-of-object">
+                        Searchsploit
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                      Vulnerability reseach and exploit references
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="searchsploit.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container" style ="width:18rem" >
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       03
+                    </div>
+                    <div id ="name-of-object">
+                        Hydra
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     authentication testing in controlled environments
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="hydra.png"/>
+                </section>
+            </div>
+  </section>
+      </section>
+
+      
+      <section class ="tools-section">
+
+<div id ="cybersubtitle">
+    <img src ="subtitle5.png"/>
+</div>
+
+
+
+        <!-- THE LIST OF THE OS SYSTEM I USE -->
+
+        <section class ="os-list">
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       01
+                    </div>
+                    <div id ="name-of-object">
+                        Python
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Scripting and automation
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="python.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       02
+                    </div>
+                    <div id ="name-of-object">
+                        Bash
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                      Command-line workflow and task automation
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="bash.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       03
+                    </div>
+                    <div id ="name-of-object">
+                        Git
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Version control and project tracking
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="git.png"/>
+                </section>
+            </div>
+
+
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       04
+                    </div>
+                    <div id ="name-of-object">
+                        VS Code
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Development and documentation
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="vscode.png"/>
+                </section>
+            </div>
+  </section>
+      </section>
+
+
+      
+      <section class ="tools-section">
+
+<div id ="cybersubtitle">
+    <img src ="subtitle61.png"/>
+</div>
+
+
+        <!-- THE LIST OF THE OS SYSTEM I USE -->
+
+        <section class ="os-list">
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       01
+                    </div>
+                    <div id ="name-of-object">
+                        Oracle VirtualBox
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Isolated virtual environments 
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="virtualbox.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       02
+                    </div>
+                    <div id ="name-of-object">
+                        Metasploitable
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                      Vulnerable system analysis
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="metasploit1.png"/>
+                </section>
+            </div>
+
+
+              <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       03
+                    </div>
+                    <div id ="name-of-object">
+                        DVWA
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Web vulnerability testing 
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="dvwa.png"/>
+                </section>
+            </div>
+
+
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       04
+                    </div>
+                    <div id ="name-of-object">
+                        OWASP JUICE shop
+                    </div>
+                </section>
+                <section class ="object-used-for">
+                     Modern web application security testing
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="juiceshop.png"/>
+                </section>
+            </div>
+
+            
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       05
+                    </div>
+                    <div id ="name-of-object">
+                        TryHackMe
+                    </div>
+                </section>
+                <section class ="object-used-for" style ="font-size:0.9rem">
+                     Build foundational knowledge and guided skills, to learning
+                     concepts.
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="thm.png"/>
+                </section>
+            </div>
+
+            
+
+            <div class ="object-container">
+                <section id ="header-container">
+                    <div id ="number-of-object">
+                       06
+                    </div>
+                    <div id ="name-of-object">
+                        HackTheBox
+                    </div>
+                </section>
+                <section class ="object-used-for" style ="font-size:0.9rem">
+                     Practice independent problem-solving and simulate real-world
+                     scenarios.
+                </section>
+                <section class ="object-image">
+                    <img class ="object-image" src ="htb.png"/>
+                </section>
+            </div>
+
+        
+
+  </section>
+      </section>
+
+
+<section class ="cybersection-projects-section" id ="cybersection-projects-section">
+        <div id ="cybersection-projects-title">
+            <img src ="cybersecurityprojects.png"/>
+        </div>
+        <div id ="cybersection-projects-introducting">
+            Each project focuses on understanding systems from the ground
+up — identifying entry points, analyzing vulnerabilities, and observing system behavior
+    
+        </div>
+     </section>
+
+<div class="scroll-container">
+  
+    <!-- Card 1 -->
+    <div class="project-card">
+        <div class="project-card-image">
+            <img class ="project-card-image" src ="cdn.png"/>
+            <div class="badge">01</div>
+        </div>
+        <div class="card-info">
+            <div class="small-title">title</div>
+            <div class="main-title">Origin Server Exposure vs CDN</div>
+            <div class="desc">
+                Analysis of exposure, security, and attack surface.
+            </div>
+
+            <div class="card-footer">
+                <div style="display:flex; gap:10px;">
+                    <div class="place-box">CDN</div>
+                    <div class="place-box">Server</div>
+                </div>
+                <a href="CDN vs Direct Server.pdf" download class="view-project">View</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="project-card">
+        <div class="project-card-image">
+            <div class="badge">02</div>
+        </div>
+        <div class="card-info">
+            <div class="small-title">overview</div>
+            <div class="main-title">CDN Protection Layers</div>
+            <div class="desc">
+                Learn how CDNs shield origin servers from attacks.
+            </div>
+
+            <div class="card-footer">
+                <div style="display:flex; gap:10px;">
+                    <div class="place-box"></div>
+                    <div class="place-box"></div>
+                </div>
+                <a href="#" class="view-project">View</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="project-card">
+        <div class="project-card-image">
+            <div class="badge">03</div>
+        </div>
+        <div class="card-info">
+            <div class="small-title">analysis</div>
+            <div class="main-title">Network Defense Systems</div>
+            <div class="desc">
+                Firewalls, DMZ, and modern infrastructure security.
+            </div>
+
+            <div class="card-footer">
+                <div style="display:flex; gap:10px;">
+                    <div class="place-box"></div>
+                    <div class="place-box"></div>
+                </div>
+                <a href="#" class="view-project">View</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- DOT INDICATOR -->
+<div class="project-dots">
+  <span class="project-dot active"></span>
+  <span class="project-dot"></span>
+  <span class="project-dot"></span>
+</div>
+
+
+<section id ="write-ups-container-title">
+        <section class ="write-ups-container-title">
+            <img src ="writeups.png"/>
+        </section>
+    </section>
+
+     <section class ="write-ups-section writeup-js" id ="write-ups-section">
+         <section class ="writeup-intro">
+            <div id ="writeup-intro">
+                <div id ="writeup-header">
+                     <div id ="writeup-section-icon-container">
+                        <div class ="writeup-section-icon">
+                           <img class ="writeup-icon" src ="report (1).png"/>
+                        </div>
+                     </div>
+                     <div id ="write-ups-section-title-intro">
+                         Review My Reports
+                     </div>
+                </div>
+                <div id ="writeup-body">
+                   This section showcases a collection of my cybersecurity write-ups,where I document and analyze real-world
+                   vulnerabilities and hands-on security challenges.
+                </div>
+            </div>
+             <section class ="writeup-picture">
+              <img class ="writeup-picture" src ="reportpic3.png"/>
+         </section>
+         </section>
+
+         <section class ="report-container">
+            <div id ="report-container-number">
+                <div id ="report-number">
+                   01
+                </div>
+            </div>
+
+            <section class ="report-title">
+                SQL Injection via Product Category Filter
+            </section>
+
+            <section class ="report-summary">
+                The application is vulnerable to SQL injection in the product category filter parameter. 
+                By manipulating the category parameter, it is possible to perform a UNION-based SQL injection.
+            </section>
+
+            <div id ="report-view">
+                <a href ="1SQLInjectionviaProductCategoryFilter.md" target ="_blank">
+                    <div id ="report-view-button">
+                       View
+                    </div>
+                </a>
+            </div>
+         </section>
+
+
+                   <section class ="report-container">
+            <div id ="report-container-number">
+                <div id ="report-number">
+                   02
+                </div>
+            </div>
+
+            <section class ="report-title">
+                Blind OS Command Injection Leading to Remote Command Execution
+            </section>
+
+            <section class ="report-summary">
+                User-controlled input is passed into a backend shell command without proper sanitization,
+                 allowing arbitrary command execution.
+               
+            </section>
+
+            <div id ="report-view">
+                <a href ="3BlindOSCommandInjection.md" target="_blank">
+                    <div id ="report-view-button">
+                       View
+                    </div>
+                </a>
+            </div>
+         </section>
+
+
+          <section class ="report-container">
+            <div id ="report-container-number">
+                <div id ="report-number">
+                   03
+                </div>
+            </div>
+
+            <section class ="report-title">
+                Authentication Bypass via Improper Session Enforcement
+            </section>
+
+            <section class ="report-summary">
+                The application allows users to access protected account functionality before completing the 
+                second authentication factor. By directly requesting the account using the session cookie issued 
+                after primary authentication.
+            </section>
+
+            <div id ="report-view">
+                <a href ="2FAbypass.md" target ="_blank">
+                    <div id ="report-view-button">
+                       View
+                    </div>
+                </a>
+            </div>
+         </section>
+
+
+
+          <section class ="report-container">
+            <div id ="report-container-number">
+                <div id ="report-number">
+                   04
+                </div>
+            </div>
+
+            <section class ="report-title">
+                Horizontal Privilege Escalation via GUID-Based User ID
+            </section>
+
+            <section class ="report-summary">
+                While exploring the user account pages, I found that the application
+                 allows users to access other users’ account data by manipulating a user ID parameter.
+            </section>
+
+            <div id ="report-view">
+                <a href ="5HorizontalPrivilegeEscalation.md" target ="_blank">
+                    <div id ="report-view-button">
+                       View
+                    </div>
+                </a>
+            </div>
+         </section>
+
+
+                   <section class ="report-container">
+            <div id ="report-container-number">
+                <div id ="report-number">
+                   05
+                </div>
+            </div>
+
+            <section class ="report-title">
+                Directory Traversal Vulnerability Allowing Access to Sensitive Files
+            </section>
+
+            <section class ="report-summary">
+                The application is vulnerable to directory traversal via a user-controlled file path parameter.
+                When I can manipulate the file path to access files their not intended to access.
+                This allows unauthorized reading of sensitive system files.
+            </section>
+
+            <div id ="report-view">
+                <a href ="4DirectoryTraversalVulnerability.md" target ="_blank">
+                    <div id ="report-view-button">
+                       View
+                    </div>
+                </a>
+            </div>
+         </section>
+     </section>
+
+
+<!-- DOT INDICATOR -->
+<div class="write-dots">
+  <span class="write-dot active"></span>
+  <span class="write-dot"></span>
+  <span class="write-dot"></span>
+  <span class="write-dot"></span>
+  <span class="write-dot"></span>
+  <span class="write-dot"></span>
+</div>
+
+
+    <div id ="websecurity-title">
+        <img src ="webappsecuirty.png"/>
+    </div>
+    <div id ="websecurity-info">
+        This section focuses on understanding how web applications communicate,
+        process input, and manange user sessions, and how these behaviors impact security.   
+    </div>
+    <section class ="websecurity-list">
+        <div class ="websecurity-card">
+            <div id ="websecurity-card-title">
+                <div id ="websecurity-card-number">
+                     1
+                </div>
+                <p id ="websecurity-card-title">
+                      HTTP Communication Model
+                </p>
+            </div>
+            <div id ="websecurity-card-info">
+                      Web applications rely on HTTP/HTTPS for communication between client and server.  <br><br>
+                      Each interaction follows a request–response cycle that defines how data is exchanged. <br><br> 
+                      Methods like GET and POST determine how information is requested or submitted.  <br><br>
+                      Understanding this model is essential for analyzing application behavior.
+            </div>
+        </div>
+
+         <div class ="websecurity-card">
+            <div id ="websecurity-card-title">
+                <div id ="websecurity-card-number">
+                     2
+                </div>
+                <p id ="websecurity-card-title">
+                      Request Components & Behavior
+                </p>
+            </div>
+            <div id ="websecurity-card-info">
+                     HTTP requests contain headers, parameters, and sometimes cookies that shape server interaction.  <br><br>
+            Headers can reveal technologies, policies, and server configurations.  <br><br>
+            Modifying request components can change how the application responds.  <br><br>
+            This helps in understanding logic and uncovering hidden behavior.
+            </div>
+        </div>
+
+
+          <div class ="websecurity-card">
+            <div id ="websecurity-card-title">
+                <div id ="websecurity-card-number">
+                     3 
+                </div>
+                <p id ="websecurity-card-title">
+                    Authe & Session Management  
+                </p>
+            </div>
+            <div id ="websecurity-card-info">
+                     Authentication systems validate user identity through credentials submitted to the server.  <br><br>
+            Once verified, the server creates a session to maintain the user’s state.  <br><br>
+            Session tokens or cookies are used to persist authentication across requests.  <br><br>
+            Understanding session handling is key to analyzing access control mechanisms.
+            </div>
+        </div>
+
+
+           <div class ="websecurity-card">
+            <div id ="websecurity-card-title">
+                <div id ="websecurity-card-number">
+                     4
+                </div>
+                <p id ="websecurity-card-title">
+                      Surface Mapping (Enumeration)
+                </p>
+            </div>
+            <div id ="websecurity-card-info">
+                     Web applications expose multiple endpoints such as directories, APIs, and hidden routes.<br><br>  
+            Identifying these expands the visible attack surface of the application.  <br><br>
+            Enumeration helps reveal functionality not immediately visible on the interface.  <br><br>
+            This process forms the foundation for deeper security analysis.
+            </div>
+        </div>
+
+
+
+           <div class ="websecurity-card">
+            <div id ="websecurity-card-title">
+                <div id ="websecurity-card-number">
+                     5
+                </div>
+                <p id ="websecurity-card-title">
+                      Input Handling & Risk Areas
+                </p>
+            </div>
+            <div id ="websecurity-card-info">
+                     Web applications process user input through forms, parameters, and request bodies.  <br><br>
+            Improper handling of this input can lead to unexpected behavior or vulnerabilities.  <br><br>
+            Validating and sanitizing input is critical for maintaining security.  <br><br>
+            Understanding this helps identify areas where applications may be at risk.
+            </div>
+        </div>
+
+
+           <div class ="websecurity-card">
+            <div id ="websecurity-card-title">
+                <div id ="websecurity-card-number">
+                     6
+                </div>
+                <p id ="websecurity-card-title">
+                      Server Response Behavior
+                </p>
+            </div>
+            <div id ="websecurity-card-info">
+                     Server responses include status codes, headers, and content that reflect backend behavior.  <br><br>
+         Different responses can indicate access control, errors, or misconfigurations.  <br><br>
+         Analyzing these responses helps in understanding how the system processes requests.  <br><br>
+         It also provides insight into potential weaknesses in the application.
+            </div>
+        </div>
+    </section>
+
+
+<footer>
+<img class ="footer-image" src ="footerimage1.png"/>
+ <section class ="footer-information">
+     <div id ="footer-quote">
+             "Systems don't fail randomly - they reveal what was always there."         
+     </div>
+     <div id ="blank-space"></div>
+     <div id ="quick-socials-container">
+         <section class ="quick-links-container">
+                      <div id ="quick-links">
+                    <p id ="links-title">
+                       Quick Links
+                    </p>
+                    <a class ="links" href ="#contact-me">
+                        <p class ="links">About Me</p>
+                    </a>
+                    <a class ="links" href ="#cybersection-projects-section">
+                        <p class ="links">Projects</p>
+                    </a>
+
+                 </div>    
+         </section>
+         <section class ="social-medias-container">
+             <div class ="upper-social-medias">
+                 <div id ="footer-social-media-container">
+                     <a href ="https://www.instagram.com/edienemx" target="_blank" rel ="noopener noreferrer">
+                         <img src ="instagram.png"/>
+                     </a>
+                 </div>
+                 <div id ="footer-social-media-container" >
+                     <a href ="https://www.linkedin.com/in/edie-sibanda-373b2739a" target="_blank" rel ="noopener noreferrer">
+                         <img src ="linkedin.png"/>
+                     </a>
+                 </div>
+             </div>
+             <div class ="lower-social-medias">
+                 <div id ="footer-social-media-container">
+                     <a href ="https://www.github.com/Nemxfacami" target="_blank" rel ="noopener noreferrer">
+                         <img src ="github.png"/>
+                     </a>
+                 </div>
+                 <div id ="footer-social-media-container">
+                     <a href ="https://www.facebook.com/profile.php?id=61576378794620" target="_blank" rel ="noopener noreferrer">
+                         <img src ="facebook.png"/>
+                     </a>
+                 </div>
+             </div>
+         </section>
+     </div>
+     
+     <div id ="mylogo-info">
+               
+     </div>
+     <div id ="copyrights">
+                 © 2026 Nemx. Observing. Reconstructing. Revealing. 
+     </div>
+ </section>
+</footer>
+
+</section>
+
+
+<script>
+
+const container = document.querySelector('.card-list');
+const dots = document.querySelectorAll('.dot');
+
+container.addEventListener('scroll', () => {
+  const scrollLeft = container.scrollLeft;
+  const cardWidth = container.offsetWidth;
+
+  const index = Math.round(scrollLeft / cardWidth);
+
+  dots.forEach(dot => dot.classList.remove('active'));
+  if (dots[index]) {
+    dots[index].classList.add('active');
+  }
+});
+
+
+const projectContainer = document.querySelector('.scroll-container');
+const projectDots = document.querySelectorAll('.project-dot');
+
+projectContainer.addEventListener('scroll', () => {
+  const scrollLeft = projectContainer.scrollLeft;
+  const cardWidth = projectContainer.offsetWidth;
+
+  const index = Math.round(scrollLeft / cardWidth);
+
+  projectDots.forEach(projectDots => projectDots.classList.remove('active'));
+  if (projectDots[index]) {
+    projectDots[index].classList.add('active');
+  }
+});
+
+
+const writeupContainer = document.querySelector('.writeup-js');
+const writedots = document.querySelectorAll('.write-dot');
+
+writeupContainer.addEventListener('scroll', () => {
+  const scrollLeft = writeupContainer.scrollLeft;
+  const cardWidth = writeupContainer.offsetWidth;
+
+  const index = Math.round(scrollLeft / cardWidth);
+
+  writedots.forEach(writedots => writedots.classList.remove('active'));
+  if (writedots[index]) {
+    writedots[index].classList.add('active');
+  }
+});
+
+</script>
+</body>
+</html>
