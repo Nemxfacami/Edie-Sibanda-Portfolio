@@ -1,0 +1,30 @@
+import os
+import re
+
+ROOT = "."
+
+for root, dirs, files in os.walk(ROOT):
+    for file in files:
+        if not file.lower().endswith((".html", ".htm")):
+            continue
+
+        path = os.path.join(root, file)
+
+        with open(path, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        # Replace .png references with .webp
+        new_content = re.sub(
+            r'(\.png)(?=["\'\s)#?])',
+            '.webp',
+            content,
+            flags=re.IGNORECASE
+        )
+
+        if new_content != content:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(new_content)
+
+            print(f"Updated: {path}")
+
+print("\nDone.")
